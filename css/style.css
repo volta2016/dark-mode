@@ -45,7 +45,7 @@ h1 {
 
 /* card */
 .top-rrss {
-    border: 1px solids green;
+    margin-bottom: 3rem;
     margin-top: -50px;   
 }
 .card {
@@ -117,9 +117,13 @@ h1 {
     margin-right: 5px;
 }
 
+h2 {
+    color: var(--gray);
+    margin: 1.5rem 0;
+}
 /* card-overview */
 .overview {
-    margin-bottom: 100px;
+  padding-bottom: 2em;
 }
 
 .card-small {
@@ -150,10 +154,14 @@ h1 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    color: var(--bright-red);
+    color: var(--lime-green);
     font-size: .8rem;
     font-weight: bold;
 }
+
+.card-small-percentage.is-danger {
+    color: var(--bright-red);  
+} 
 
 .card-small-percentage span {
     display: flex;
