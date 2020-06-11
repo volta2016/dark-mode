@@ -17,6 +17,7 @@ h2 {
     --youtube: hsl(348, 97%, 39%);
     --gray: #5f616d;
     --grayf: #9a9ca8;
+    --cardGray: #f0f3fa;
 }
 .wrapper {
     padding: 0 30px;
@@ -51,7 +52,7 @@ h1 {
 .card {
     overflow: hidden;
     border-radius: 8px;
-    background-color: #f0f3fa;
+    background-color: var(--cardGray);
     text-align: center;
     padding: 1.7rem 0;
     position: relative;
@@ -199,5 +200,15 @@ h2 {
     .grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 25px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        color: white;
+    }
+    :root {
+        --cardGray: blue;
     }
 }
